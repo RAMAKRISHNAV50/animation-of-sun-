@@ -1,0 +1,53 @@
+
+body {
+    /* height: 100vh; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px
+}
+
+.sun {
+    height: 200px;
+    width: 200px;
+    border: 2px white;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    position: absolute;
+    left: 40%;
+}
+.earth {
+    height: 500px;
+    width: 500px;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: -150px;
+
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
